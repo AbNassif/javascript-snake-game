@@ -1,0 +1,172 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Sigmar One', cursive;
+
+}
+
+/* Logo Section */
+
+div.logo{
+    width: 100%;
+    /* height: 3rem; */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(138, 0, 138);
+    /* background-color: white; */
+}
+
+div.logo h1{
+    padding: 1rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+div.snakeLogo{
+    width: 36px;
+    height: 35px;
+    border-bottom: 7px solid rgb(138, 0, 138);
+    padding: 9px 5px;
+    border-radius: 50% 50% 0px 0px;
+    box-shadow: inset 0px -2px 0px black
+    ,inset 5px 2px 0px rgb(238, 139, 230);
+    background-color: purple;
+}
+
+div.snakeLogo div.eyesWrapper{
+    width: 100%;
+    height: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.eyesWrapper div.eye{
+    width: 5px;
+    height: 100%;
+    background-color: rgb(255, 0, 191);
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: inset 1px 1px 0px rgb(53, 7, 7);
+}
+
+/* Game section */
+
+div.mainWrapper{
+    width: 410px;
+    height: 410px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    background-color: rgb(187, 182, 182);
+    border: 1px solid rgb(194, 128, 6);
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+}
+
+div.snakeWrapper{
+   
+}
+
+div.snake1{
+    width: 10px;
+    height: 10px;
+    background-color: purple;
+    position: absolute;
+    transform: translate(-10%,10%);
+    left: 200px;
+    bottom: 200px;
+    z-index: 3;
+}
+/* 
+div.snake{
+    width: 10px;
+    height: 10px;
+    background-color: purple;
+    position: absolute;
+    transform: translate(-10%,10%);
+} */
+
+div.lostPopUp{
+    width: 100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.9);
+    padding: 2rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    display: none;
+    z-index: 5;
+}
+
+div.lostPopUp h1{
+    text-align: center;
+    color: orange;
+    font-size: 2.5rem;
+    /* -webkit-text-stroke: 1px yellow; */
+}
+
+div.lostPopUp h2.score,div.lostPopUp h2.highScore{
+    font-size: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+    text-align: start;
+}
+
+span{
+    margin-left: 2rem;
+    color: yellow;
+}
+div.lostPopUp h2{
+    color: white;
+}
+
+button.playAgain{
+    margin-top:3rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color:orange ;
+    font-family: inherit;   
+    border: 1px solid orange;
+    transition: 0.5s;
+    cursor:pointer;
+}
+button.playAgain:hover{
+    background-color: black;
+    color: white;
+}
+
+div.food{
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    position: absolute;
+    left: 200px;
+    bottom: 200px;
+    border-radius: 50%;
+    transform: translate(-10%,10%);
+    /* display: none; */
+}
+
+.snake2{
+   /* display: none; */
+}
